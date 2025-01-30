@@ -58,7 +58,7 @@ export class ServerService {
             })
 
             socket.on('disconnect', () => {
-                console.log('Un cliente se ha desconectado:', socket.id);
+                console.log('A client has disconnected:', socket.id);
             });
         });
     }
@@ -79,7 +79,7 @@ export class ServerService {
     }
 
     public gameStartMessage() {
-        //
+        console.log("Game Starting in 3 seconds...");
     }
 
     public isActive() {
@@ -87,12 +87,12 @@ export class ServerService {
     }
 
     private doHello(data: String) {
-        console.log("Hola");
+        console.log("HELLO");
         console.log(data);
     }
 
     private doBye(data: String) {
-        console.log("Adios");
+        console.log("GOODBYE");
         console.log(data);
     }
 }

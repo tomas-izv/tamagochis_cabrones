@@ -1,8 +1,9 @@
-import { UI } from "./Ui.js";
+import { UI_BUILDER } from "./Ui.js";
 
-export const UIv1 = UI;
+export const UIv1 = UI_BUILDER.init();
 UIv1.drawBoard = (board) => {
-    console.log("toco el piano");
+    console.log("abcxs");
 }
+
 UIv1.drawBoard();
-UI.drawBoard();
+
